@@ -279,6 +279,7 @@ function renderShortcuts(editions) {
   html += `<span class="shortcut-group"><kbd>←</kbd><kbd>→</kbd> Navegar cards</span>`;
   html += `<span class="shortcut-group"><kbd>Enter</kbd> Abrir Spotlight</span>`;
   html += `<span class="shortcut-group"><kbd>Esc</kbd> Fechar modal</span>`;
+  html += `<a class="shortcut-team-link" href="team.html" target="_blank">// time &amp; galeria ↗</a>`;
 
   document.getElementById("shortcuts-inner").innerHTML = html;
 }

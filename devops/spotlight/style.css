@@ -539,6 +539,22 @@ kbd {
 
 body.modal-open { overflow: hidden; }
 
+.shortcut-team-link {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--primary-light);
+  text-decoration: none;
+  padding: 2px 8px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  transition: color 0.15s, border-color 0.15s;
+  white-space: nowrap;
+}
+.shortcut-team-link:hover {
+  color: var(--text);
+  border-color: var(--primary);
+}
+
 /* ─── Responsive ─────────────────────────────────────────── */
 @media (max-width: 600px) {
   .site-title { font-size: 2rem; }
