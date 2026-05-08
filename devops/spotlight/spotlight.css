@@ -2,17 +2,17 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg:          #1e1e2e;
-  --sidebar-bg:  #181825;
-  --sidebar-act: #2a2a3e;
-  --titlebar:    #11111e;
-  --tabbar:      #141424;
-  --border:      #2a2a3d;
-  --purple:      #7c3aed;
-  --text:        #cdd6f4;
-  --muted:       #6c7086;
-  --dim:         #45475a;
-  --c-purple:    #cba6f7;
+  --bg:          #0c1520;
+  --sidebar-bg:  #091018;
+  --sidebar-act: #122030;
+  --titlebar:    #060e16;
+  --tabbar:      #0a1220;
+  --border:      #1a2d45;
+  --purple:      #0ea5e9;
+  --text:        #dce8f5;
+  --muted:       #607080;
+  --dim:         #3d5060;
+  --c-purple:    #7dd3fc;
   --c-blue:      #89b4fa;
   --c-green:     #a6e3a1;
   --c-yellow:    #f9e2af;
@@ -24,7 +24,7 @@
   --tabbar-h:    36px;
   --navbar-h:    50px;
   --statusbar-h: 24px;
-  --font:        "Inter", system-ui, sans-serif;
+  --font:        "Space Grotesk", system-ui, sans-serif;
   --mono:        "JetBrains Mono", "Fira Code", monospace;
 }
 
@@ -208,8 +208,8 @@ html, body {
 .cover-presenters { display: flex; flex-wrap: wrap; gap: 0.5rem; }
 
 .presenter-chip {
-  background: rgba(203,166,247,0.1);
-  border: 1px solid rgba(203,166,247,0.3);
+  background: rgba(125,211,252,0.1);
+  border: 1px solid rgba(125,211,252,0.3);
   color: var(--c-purple);
   border-radius: 20px;
   padding: 4px 14px;
@@ -236,7 +236,7 @@ html, body {
 .cover-right { flex: 0 0 360px; }
 
 .code-panel {
-  background: #12121f;
+  background: #070f18;
   border: 1px solid var(--border);
   border-radius: 10px;
   overflow: hidden;

@@ -21,7 +21,7 @@ const EDITIONS = [
   {
     number: 1,
     title: "Pipelines & Infraestrutura",
-    date: "2026-04-17",
+    date: "2026-04-24",
     period: { start: "2026-04-10", end: "2026-04-24" },
     presentationUrl: "edition-01/spotlight.html", // ou link do PPTX
     cards: [
@@ -35,9 +35,23 @@ const EDITIONS = [
   {
     number: 2,
     title: "Migração do Ambiente",                              // tema da edição
-    date: "2026-05-15",                     // data da apresentação
-    period: { start: "2026-04-24", end: "2026-05-15" },
+    date: "2026-05-01",                     // data da apresentação
+    period: { start: "2026-04-24", end: "2026-05-01" },
     presentationUrl: "edition-02/spotlight.html",
+    cards: [
+      { title: "Pipeline de CI configurado",        description: "Pipeline YAML no Azure DevOps com stages de build, test e publish.", tag: "CI/CD" },
+      { title: "Deploy automático em staging",      description: "Release pipeline com artefato versionado e aprovação antes de prod.",  tag: "Deploy" },
+      { title: "Infraestrutura como código",        description: "Terraform para App Service, Storage e Key Vault com state remoto.",    tag: "Infraestrutura" },
+      { title: "Dashboard de monitoramento",        description: "Azure Monitor com alertas de falha de build e deploy.",                tag: "Monitoramento" },
+      { title: "Secrets no Key Vault",              description: "Migração de credenciais hardcoded para Azure Key Vault.",              tag: "Segurança" },
+    ],
+  },
+    {
+    number: 3,
+    title: "Segurança e Encerramento da migração",                              // tema da edição
+    date: "2026-05-15",                     // data da apresentação
+    period: { start: "2026-05-01", end: "2026-05-15" },
+    presentationUrl: "edition-03/spotlight.html",
     cards: [
       { title: "Pipeline de CI configurado",        description: "Pipeline YAML no Azure DevOps com stages de build, test e publish.", tag: "CI/CD" },
       { title: "Deploy automático em staging",      description: "Release pipeline com artefato versionado e aprovação antes de prod.",  tag: "Deploy" },

@@ -2,14 +2,14 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg:               #09090f;
-  --surface:          #111120;
-  --surface-hover:    #161628;
-  --border:           #1e1e38;
-  --border-hover:     #2e2e55;
-  --primary:          #7c3aed;
-  --primary-light:    #9f72f5;
-  --primary-dim:      #7c3aed33;
+  --bg:               #070c12;
+  --surface:          #0c1520;
+  --surface-hover:    #111d2b;
+  --border:           #192840;
+  --border-hover:     #253a55;
+  --primary:          #0ea5e9;
+  --primary-light:    #38bdf8;
+  --primary-dim:      #0ea5e933;
 
   --green:            #10b981;
   --green-bg:         #10b98118;
@@ -22,7 +22,7 @@
   --text-muted:       #94a3b8;
   --text-dim:         #475569;
 
-  --font:             "Inter", system-ui, sans-serif;
+  --font:             "Space Grotesk", system-ui, sans-serif;
   --mono:             "JetBrains Mono", "Fira Code", monospace;
   --radius:           12px;
 }
@@ -57,7 +57,7 @@ body {
 .hex-icon {
   width: 80px;
   height: 92px;
-  filter: drop-shadow(0 0 20px #7c3aed55);
+  filter: drop-shadow(0 0 20px #0ea5e955);
 }
 
 .team-badge {
@@ -73,7 +73,7 @@ body {
 .site-title {
   font-size: 2.75rem;
   font-weight: 700;
-  background: linear-gradient(135deg, #a78bfa 0%, #818cf8 50%, #60a5fa 100%);
+  background: linear-gradient(135deg, #38bdf8 0%, #0ea5e9 50%, #60a5fa 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -131,7 +131,7 @@ main {
 
 .edition-card:hover {
   border-color: var(--border-hover);
-  box-shadow: 0 0 0 1px var(--primary-dim), 0 4px 24px #7c3aed14;
+  box-shadow: 0 0 0 1px var(--primary-dim), 0 4px 24px #0ea5e914;
   transform: translateY(-2px);
 }
 
@@ -220,7 +220,7 @@ main {
 
 .btn-primary:hover {
   background: var(--primary-light);
-  box-shadow: 0 0 16px #7c3aed55;
+  box-shadow: 0 0 16px #0ea5e955;
 }
 
 .btn-secondary {
@@ -354,7 +354,7 @@ main {
 /* ─── Shortcuts Bar ──────────────────────────────────────── */
 .shortcuts-bar {
   border-top: 1px solid var(--border);
-  background: #0a0a12;
+  background: #050c14;
   padding: 0.65rem 2rem;
   flex-shrink: 0;
 }
