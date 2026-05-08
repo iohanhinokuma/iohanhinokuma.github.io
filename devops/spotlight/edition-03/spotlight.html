@@ -47,9 +47,9 @@
           <div class="cover-meta">15 de maio de 2026 · 24/04 – 15/05</div>
           <div class="cover-presenters">
             <span class="presenter-chip">⚙ Iohan</span>
-            <span class="presenter-chip">🛠 Gustavo</span>
-            <span class="presenter-chip">🧪 Thayse</span>
             <span class="presenter-chip">🔒 Lucas</span>
+            <span class="presenter-chip">🧪 Thayse</span>
+            <span class="presenter-chip">🛠 Gustavo</span>
           </div>
           <div class="cover-stack">
             <span class="stack-tag t-azure">Azure DevOps</span>
@@ -73,15 +73,11 @@
   <span class="c-prop">edition</span>: <span class="c-num">3</span>
   <span class="c-prop">theme</span>: <span class="c-str">"Segurança &amp; Migração"</span>
   <span class="c-prop">team</span>: <span class="c-brace">[</span>
-    <span class="c-str">"Iohan"</span>, <span class="c-str">"Gustavo"</span>,
-    <span class="c-str">"Thayse"</span>, <span class="c-str">"Lucas"</span>
+    <span class="c-str">"Iohan"</span>, <span class="c-str">"Lucas"</span>,
+    <span class="c-str">"Thayse"</span>, <span class="c-str">"Gustavo"</span>
   <span class="c-brace">]</span>
-  <span class="c-prop">highlights</span>: <span class="c-brace">[</span>
-    <span class="c-str">"Pipelines corrigidos"</span>,
-    <span class="c-str">"Ambiente Dev migrado"</span>,
-    <span class="c-str">"VPN distribuída"</span>,
-    <span class="c-str">"PRODES/IBAMA integrado"</span>
-  <span class="c-brace">]</span>
+  <span class="c-prop">cards</span>: <span class="c-num">~40</span>
+  <span class="c-prop">prs</span>: <span class="c-num">2</span>
 <span class="c-brace">}</span>
             </div>
           </div>
@@ -112,31 +108,39 @@
             </tr>
             <tr>
               <td class="a-who">Iohan</td>
-              <td>Pipelines &amp; Deploy — CMS, Front e API <span class="demo-badge">+ demo</span></td>
+              <td>Pipelines &amp; Deploy — CMS, Front, API <span class="demo-badge">+ demo</span></td>
             </tr>
             <tr>
-              <td class="a-who">Lucas</td>
-              <td>Ambiente Dev — Migração, Backups e VPN <span class="demo-badge">+ demo</span></td>
-            </tr>
-            <tr>
-              <td class="a-who">Ronaldo / Iohan</td>
+              <td class="a-who">Iohan</td>
               <td>Integração PRODES/IBAMA — Agroplus</td>
             </tr>
             <tr>
-              <td class="a-who">Thayse</td>
-              <td>Laudos Biodiesel-Soja — Ajustes e validações</td>
+              <td class="a-who">Lucas</td>
+              <td>Migração do Ambiente Dev — Checkmilk e Checkwork</td>
+            </tr>
+            <tr>
+              <td class="a-who">Lucas</td>
+              <td>Backups, VPN e HiveMQ <span class="demo-badge">+ demo</span></td>
             </tr>
             <tr>
               <td class="a-who">Thayse</td>
-              <td>App Mobile — Correções e PRs mergeados</td>
+              <td>Laudos Biodiesel-Soja — ajustes e validações</td>
+            </tr>
+            <tr>
+              <td class="a-who">Thayse</td>
+              <td>App Mobile — PRs mergeados e testes</td>
             </tr>
             <tr>
               <td class="a-who">Gustavo</td>
-              <td>Suportes &amp; Correções — Cards do período</td>
+              <td>Cards Agrotrace e Checkmilk do período</td>
+            </tr>
+            <tr>
+              <td class="a-who">Gustavo</td>
+              <td>Suportes &amp; TI Geral</td>
             </tr>
             <tr>
               <td class="a-who">Todos</td>
-              <td>Roadmap + Conquistas do Sprint</td>
+              <td>Roadmap + Conquistas</td>
             </tr>
           </tbody>
         </table>
@@ -174,23 +178,27 @@
             <div class="stat-sub">App Mobile — formulário dinâmico</div>
           </div>
           <div class="stat-card">
-            <div class="stat-value">8</div>
-            <div class="stat-label">Reuniões</div>
-            <div class="stat-sub">Agrotrace · AproSoja · Citrus · Agroplus</div>
-          </div>
-          <div class="stat-card">
             <div class="stat-value">2</div>
             <div class="stat-label">Serviços migrados</div>
             <div class="stat-sub">Checkmilk · Checkwork</div>
           </div>
+          <div class="stat-card">
+            <div class="stat-value">8</div>
+            <div class="stat-label">Reuniões</div>
+            <div class="stat-sub">Agrotrace · AproSoja · Citrus · Agroplus</div>
+          </div>
         </div>
       </section>
+
+      <!-- ══════════════════════════════════════════════════
+           IOHAN
+      ════════════════════════════════════════════════════ -->
 
       <!-- ── 04 · Pipelines & Deploy ───────────────────── -->
       <section class="slide slide-card"
                data-file="pipelines.yml"
                data-icon="⚙"
-               data-section="DEVOPS"
+               data-section="IOHAN"
                data-presenter="Iohan">
         <div class="card-meta">
           <span class="card-id">devops / pipelines</span>
@@ -211,7 +219,7 @@
             <ul>
               <li>Correção dos pipelines de CMS, Front e API Agrotrace</li>
               <li>Ajuste nos pipelines de build em dev</li>
-              <li>Deploy de atualizações da landing page</li>
+              <li>Deploy de atualizações das landing pages</li>
               <li>1:1 com Ronaldo — ajustes deploy CMS dev</li>
             </ul>
           </div>
@@ -222,43 +230,11 @@
         </div>
       </section>
 
-      <!-- ── 05 · Ambiente Dev / VPN ───────────────────── -->
-      <section class="slide slide-card"
-               data-file="ambiente-dev.md"
-               data-icon="🔒"
-               data-section="DEVOPS"
-               data-presenter="Lucas">
-        <div class="card-meta">
-          <span class="card-id">infra / ambiente-dev</span>
-          <span class="card-tag ct-infra">Infraestrutura</span>
-        </div>
-        <h2 class="card-slide-title">Ambiente Dev — Migração, Backups e VPN</h2>
-        <div class="card-body">
-          <div class="card-section solution">
-            <div class="section-label">✓ realizado — lucas</div>
-            <ul>
-              <li>Migração do <strong>Checkmilk</strong> e <strong>Checkwork</strong> para novo ambiente</li>
-              <li>Backups automatizados configurados</li>
-              <li>Verificação de backups e restores com notificação em prod</li>
-              <li>Finalização da migração completa do ambiente dev</li>
-            </ul>
-          </div>
-          <div class="card-section impact">
-            <div class="section-label">🔐 vpn — credenciais geradas</div>
-            <ul>
-              <li><strong>WireGuard VPN</strong> configurada para acesso interno</li>
-              <li>Credenciais geradas: Carlos, Elias, Matheus, Thielson</li>
-              <li>HiveMQ: preparação de criação via <strong>Terraform</strong></li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- ── 06 · PRODES / IBAMA ───────────────────────── -->
+      <!-- ── 05 · PRODES / IBAMA ───────────────────────── -->
       <section class="slide slide-card"
                data-file="prodes-ibama.md"
                data-icon="🌿"
-               data-section="DEVOPS"
+               data-section="IOHAN"
                data-presenter="Iohan">
         <div class="card-meta">
           <span class="card-id">agroplus / integrações</span>
@@ -271,7 +247,8 @@
             <ul>
               <li>Importação de <strong>Cars</strong>, <strong>PRODES</strong> e <strong>IBAMA</strong> no Agroplus</li>
               <li>Validação dos dados consumidos do PRODES</li>
-              <li>Alteração descrição Bioma no cadastro da propriedade (#12245)</li>
+              <li>#12245 — Descrição do Bioma no cadastro da propriedade</li>
+              <li>#12262 — Download CAR estadual</li>
             </ul>
           </div>
           <div class="card-section note">
@@ -280,122 +257,241 @@
               <li>Indicadores de sustentabilidade</li>
               <li>Migração API Evolution</li>
               <li>Melhorias no dashboard Carbono</li>
-              <li>Fontes com negrito no Jasper</li>
             </ul>
           </div>
           <div class="card-section impact">
             <div class="section-label">📋 contexto</div>
-            <p>Reunião de alinhamento com Ricardo e Ronaldo. Dados ambientais integrados ao Agroplus para consulta georreferenciada.</p>
+            <p>Reunião com Ricardo e Ronaldo para alinhamento. Dados ambientais integrados ao Agroplus para consulta georreferenciada.</p>
           </div>
         </div>
       </section>
 
-      <!-- ── 07 · Biodiesel-Soja Laudos ───────────────── -->
+      <!-- ══════════════════════════════════════════════════
+           LUCAS
+      ════════════════════════════════════════════════════ -->
+
+      <!-- ── 06 · Migração do Ambiente Dev ─────────────── -->
+      <section class="slide slide-card"
+               data-file="migracao-dev.md"
+               data-icon="🔄"
+               data-section="LUCAS"
+               data-presenter="Lucas">
+        <div class="card-meta">
+          <span class="card-id">infra / migração</span>
+          <span class="card-tag ct-infra">Infraestrutura</span>
+        </div>
+        <h2 class="card-slide-title">Migração do Ambiente Dev — Checkmilk e Checkwork</h2>
+        <div class="card-body">
+          <div class="card-section solution">
+            <div class="section-label">✓ realizado</div>
+            <ul>
+              <li>Migração do <strong>Checkmilk</strong> para o novo ambiente de desenvolvimento</li>
+              <li>Migração do <strong>Checkwork</strong> para o novo ambiente de desenvolvimento</li>
+              <li>Finalização da migração completa do ambiente dev</li>
+            </ul>
+          </div>
+          <div class="card-section impact">
+            <div class="section-label">📈 impacto</div>
+            <p>Todos os serviços principais agora operam no novo ambiente. Agrotrace, Checkmilk e Checkwork disponíveis para o time via VPN.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── 07 · Backups, VPN e HiveMQ ───────────────── -->
+      <section class="slide slide-card"
+               data-file="infra-vpn.md"
+               data-icon="🔒"
+               data-section="LUCAS"
+               data-presenter="Lucas">
+        <div class="card-meta">
+          <span class="card-id">infra / segurança</span>
+          <span class="card-tag ct-sec">Segurança</span>
+        </div>
+        <h2 class="card-slide-title">Backups Automatizados, VPN e HiveMQ</h2>
+        <div class="card-body triple">
+          <div class="card-section solution">
+            <div class="section-label">💾 backups</div>
+            <ul>
+              <li>Backups automatizados configurados no novo ambiente</li>
+              <li>Verificação de restores com notificação em produção</li>
+            </ul>
+          </div>
+          <div class="card-section impact">
+            <div class="section-label">🔐 vpn — wireguard</div>
+            <ul>
+              <li>Credenciais geradas e distribuídas:</li>
+              <li><strong>Carlos</strong></li>
+              <li><strong>Elias</strong></li>
+              <li><strong>Matheus</strong></li>
+              <li><strong>Thielson</strong></li>
+            </ul>
+          </div>
+          <div class="card-section note">
+            <div class="section-label">🔧 hivemq — terraform</div>
+            <p>Preparação da criação do broker HiveMQ via Terraform no novo ambiente. Próximo passo: provisionar e validar.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════════
+           THAYSE
+      ════════════════════════════════════════════════════ -->
+
+      <!-- ── 08 · Biodiesel-Soja Laudos ───────────────── -->
       <section class="slide slide-card"
                data-file="biodiesel.ts"
                data-icon="🧪"
-               data-section="DEVOPS"
+               data-section="THAYSE"
                data-presenter="Thayse">
         <div class="card-meta">
           <span class="card-id">#11729 · biodiesel-soja</span>
           <span class="card-tag ct-deploy">QA / Laudos</span>
         </div>
         <h2 class="card-slide-title">Laudos Biodiesel-Soja — Ajustes e Validações</h2>
-        <div class="card-body">
+        <div class="card-body triple">
           <div class="card-section solution">
-            <div class="section-label">✓ realizado</div>
+            <div class="section-label">✓ concluído</div>
             <ul>
-              <li>Testes de autenticação CAR após mudança (#12220)</li>
-              <li>Validação de configuração de variáveis em regras numéricas (#12213)</li>
-              <li>Ajuste de prazo Minerva — Denys (#12224 · Ticket 236 JNB)</li>
-              <li>Relatório Conferência de Croquis — Débora (#12191 · Ticket 227)</li>
+              <li>#12220 — Teste de busca de dados do CAR após mudança de autenticação</li>
+              <li>#12213 — Validação de configuração de variáveis em regras numéricas</li>
+              <li>#12224 — Mudar data de expiração Minerva — Denys</li>
+              <li>#12191 — Relatório de Conferência de Croquis — Débora (Ticket 227)</li>
+              <li>#12214 — Reativar links e estender prazo Minerva</li>
             </ul>
           </div>
           <div class="card-section note">
             <div class="section-label">🔄 em progresso — #11729</div>
             <ul>
-              <li>Acrescentar nova regra na validação de resposta dos laudos</li>
-              <li>Nova versão do app nas lojas — aguardando Elias</li>
+              <li>Nova regra de validação de resposta nos laudos</li>
+              <li>Nova versão do app aguardando publicação nas lojas (com Elias)</li>
+            </ul>
+          </div>
+          <div class="card-section impact">
+            <div class="section-label">📋 alinhamentos</div>
+            <ul>
+              <li>Com Thielson — nova regra de validação de resposta</li>
+              <li>Com Pamela — relatório de status de envio de link</li>
             </ul>
           </div>
         </div>
       </section>
 
-      <!-- ── 08 · App Mobile ───────────────────────────── -->
+      <!-- ── 09 · App Mobile ───────────────────────────── -->
       <section class="slide slide-card"
                data-file="app-mobile.md"
                data-icon="📱"
-               data-section="DEVOPS"
+               data-section="THAYSE"
                data-presenter="Thayse">
         <div class="card-meta">
           <span class="card-id">agrotrace / mobile</span>
           <span class="card-tag ct-deploy">Deploy</span>
         </div>
-        <h2 class="card-slide-title">App Mobile — Correções e PRs Mergeados</h2>
-        <div class="card-body triple">
+        <h2 class="card-slide-title">App Mobile — PRs Mergeados e Testes</h2>
+        <div class="card-body">
           <div class="card-section solution">
             <div class="section-label">✓ prs mergeados</div>
             <ul>
-              <li><strong>PR #10783:</strong> Remove temas sem perguntas do relatório de formulário dinâmico</li>
-              <li><strong>PR #10788:</strong> Corrige listagem de propriedades na baixa do formulário dinâmico</li>
+              <li><strong>PR #10783</strong> — Remove temas sem perguntas do relatório de formulário dinâmico</li>
+              <li><strong>PR #10788</strong> — Corrige listagem de propriedades na baixa do formulário dinâmico</li>
             </ul>
           </div>
           <div class="card-section impact">
             <div class="section-label">✓ cards concluídos</div>
             <ul>
-              <li>#12205 — Testar função de agendar atendimento pelo app</li>
               <li>#11998 — Testar novos ajustes e melhorias no app</li>
-              <li>#12188 — Alterar senha Checkwork — Edson</li>
+              <li>#12205 — Testar função de agendar atendimento pelo app</li>
+              <li>#12204 — Mudar safra vigente Agroplus</li>
               <li>#11939 — Produtor sem ranking no perfil público — Karolina</li>
-              <li>#12214 — Reativar links e estender prazo Minerva</li>
+              <li>#12188 — Alterar senha Checkwork — Edson</li>
+              <li>#12230 — Configuração de 2 notebooks — Natalia</li>
             </ul>
-          </div>
-          <div class="card-section note">
-            <div class="section-label">📌 demanda</div>
-            <p>Carlos: Visualizador de PDF para o app — em análise.</p>
           </div>
         </div>
       </section>
 
-      <!-- ── 09 · Suportes & Correções ────────────────── -->
+      <!-- ══════════════════════════════════════════════════
+           GUSTAVO
+      ════════════════════════════════════════════════════ -->
+
+      <!-- ── 10 · Cards Agrotrace e Checkmilk ─────────── -->
+      <section class="slide slide-card"
+               data-file="cards-agrotrace.md"
+               data-icon="🗂"
+               data-section="GUSTAVO"
+               data-presenter="Gustavo">
+        <div class="card-meta">
+          <span class="card-id">agrotrace / checkmilk</span>
+          <span class="card-tag ct-mon">Acompanhamento</span>
+        </div>
+        <h2 class="card-slide-title">Cards Agrotrace e Checkmilk do Período</h2>
+        <div class="card-body">
+          <div class="card-section solution">
+            <div class="section-label">✓ agrotrace</div>
+            <ul>
+              <li>#12279 — Cadastro de lembrete — 3S</li>
+              <li>#12270 — Dificuldade ao abrir atendimento — Edson</li>
+              <li>#12260 — Envio de dados pendentes — Kaique</li>
+              <li>#12263 — Melhoria no relatório 3S</li>
+              <li>#12255 — Melhoria em projeto 3S</li>
+              <li>#12254 — Gerar laudo pelo app — Julia</li>
+              <li>#12249 — Gerar laudos novamente — Marcia</li>
+              <li>#12231 — Alterações no Carbono — protocolo e relatório</li>
+              <li>#12237 — Envio de links — Minerva</li>
+              <li>#12217 — Ajustar relatório de dg CheckSheep</li>
+              <li>#12218 — Verificar diagnósticos — Laio</li>
+            </ul>
+          </div>
+          <div class="card-section impact">
+            <div class="section-label">✓ checkmilk</div>
+            <ul>
+              <li>#12271 — Verificar lançamentos de dados do PEC — Felipe</li>
+              <li>#12272 — Verificar acesso de técnico — Roaga</li>
+              <li>#12257 — Gerar RAT do zero — Ricardo Arruda</li>
+              <li>#12186 — Acompanhamento não aparecer no app — Laio</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── 11 · Suportes & TI Geral ─────────────────── -->
       <section class="slide slide-card"
                data-file="suportes.log"
                data-icon="🔧"
-               data-section="DEVOPS"
+               data-section="GUSTAVO"
                data-presenter="Gustavo">
         <div class="card-meta">
-          <span class="card-id">devops / suporte</span>
+          <span class="card-id">devops / suporte-ti</span>
           <span class="card-tag ct-sec">Suporte</span>
         </div>
-        <h2 class="card-slide-title">Suportes &amp; Correções — Cards do Período</h2>
+        <h2 class="card-slide-title">Suportes &amp; TI Geral</h2>
         <div class="card-body">
-          <div class="card-section solution">
-            <div class="section-label">✓ atendimentos agrotrace</div>
-            <ul>
-              <li>#12270 — Dificuldade ao abrir atendimento — Edson</li>
-              <li>#12263 — Melhoria no relatório 3S</li>
-              <li>#12279 — Cadastro de lembrete — 3S</li>
-              <li>#12271 — Verificar lançamentos de dados PEC — Felipe (Checkmilk)</li>
-              <li>#12272 — Verificar acesso de técnico — Roaga (Checkmilk)</li>
-              <li>#12257 — Gerar RAT do zero — Ricardo Arruda (Checkmilk)</li>
-              <li>#12260 — Envio de dados pendentes — Kaique</li>
-              <li>#12249 — Gerar laudos novamente — Marcia</li>
-            </ul>
-          </div>
           <div class="card-section problem">
-            <div class="section-label">🖥 suporte geral (ti)</div>
+            <div class="section-label">🖥 hardware e configuração</div>
             <ul>
               <li>#12267 — Formatar celular — Verônica</li>
-              <li>#12268 — Transferir arquivos Jessica → Marcia</li>
+              <li>#12268 — Transferir arquivos e planilhas Jessica → Marcia</li>
               <li>#12273 — Recuperar unidade C + upgrade Windows</li>
+              <li>#12236 — Configurar celular novo + formatar antigo</li>
               <li>#12250 — Preparar novos celulares para atendimentos</li>
+            </ul>
+          </div>
+          <div class="card-section solution">
+            <div class="section-label">📂 dados e arquivos</div>
+            <ul>
               <li>#12256 — Recuperar planilhas excluídas — Marcia</li>
+              <li>#12206 — Verificar croquis — Débora</li>
+              <li>#12165 — Verificar dados de envio — Kaique</li>
+              <li>#12223 — Ajuda com o Drive — Verônica / Débora</li>
             </ul>
           </div>
         </div>
       </section>
 
-      <!-- ── 10 · Roadmap ──────────────────────────────── -->
+      <!-- ══════════════════════════════════════════════════
+           WRAP-UP
+      ════════════════════════════════════════════════════ -->
+
+      <!-- ── 12 · Roadmap ──────────────────────────────── -->
       <section class="slide slide-wins"
                data-file="roadmap.todo"
                data-icon="🗺"
@@ -408,32 +504,32 @@
         <div class="wins-list">
           <div class="win-item">
             <span class="win-icon">🔲</span>
-            <span><strong>Finalizar laudos Biodiesel-Soja</strong> — concluir regra de validação (#11729) e nova versão do app nas lojas.</span>
+            <span><strong>Biodiesel-Soja</strong> — concluir regra de validação (#11729) e publicar nova versão do app nas lojas (Thayse + Elias).</span>
           </div>
           <div class="win-item">
             <span class="win-icon">🔲</span>
-            <span><strong>Relatório DG AproSoja</strong> — concluir melhorias no card #12210 e gerar estimativa de demanda para Claudio.</span>
+            <span><strong>HiveMQ via Terraform</strong> — provisionar e validar o broker no novo ambiente de desenvolvimento (Lucas).</span>
           </div>
           <div class="win-item">
             <span class="win-icon">🔲</span>
-            <span><strong>Integração PRODES/IBAMA</strong> — finalizar indicadores de sustentabilidade e migração da API Evolution (Ronaldo).</span>
+            <span><strong>PRODES/IBAMA</strong> — finalizar indicadores de sustentabilidade e migração da API Evolution (Ronaldo).</span>
           </div>
           <div class="win-item">
             <span class="win-icon">🔲</span>
-            <span><strong>HiveMQ via Terraform</strong> — concluir criação do broker no novo ambiente de desenvolvimento.</span>
+            <span><strong>Relatório DG AproSoja</strong> — concluir melhorias no card #12210 e fechar estimativa de demanda para Claudio (Gustavo).</span>
           </div>
           <div class="win-item">
             <span class="win-icon">🔲</span>
-            <span><strong>Landing Pages</strong> — verificar erros nos logs e estabilizar deploys (Bruno, Ricardo, Matheus).</span>
+            <span><strong>Landing Pages</strong> — estabilizar logs e deploys com Bruno, Ricardo e Matheus (Iohan).</span>
           </div>
           <div class="win-item">
             <span class="win-icon">🔲</span>
-            <span><strong>Programa Estadual Citros</strong> — dar continuidade à configuração do projeto levantado na reunião com Thais.</span>
+            <span><strong>Programa Estadual Citros</strong> — dar continuidade à configuração do projeto levantado com Thais (Iohan).</span>
           </div>
         </div>
       </section>
 
-      <!-- ── 11 · Conquistas ───────────────────────────── -->
+      <!-- ── 13 · Conquistas ───────────────────────────── -->
       <section class="slide slide-wins"
                data-file="wins.log"
                data-icon="🏆"
@@ -446,32 +542,24 @@
         <div class="wins-list">
           <div class="win-item">
             <span class="win-icon">⚙</span>
-            <span>Pipelines de CMS, Front e API Agrotrace corrigidos e estáveis no ambiente dev.</span>
+            <span><strong>Iohan</strong> — Pipelines de CMS, Front e API corrigidos. Integração PRODES/IBAMA concluída no Agroplus.</span>
           </div>
           <div class="win-item">
             <span class="win-icon">🔒</span>
-            <span>Ambiente dev completamente migrado — Checkmilk e Checkwork operacionais com backups automatizados.</span>
+            <span><strong>Lucas</strong> — Checkmilk e Checkwork migrados. Backups automatizados. VPN distribuída para 4 membros do time.</span>
           </div>
           <div class="win-item">
-            <span class="win-icon">🛡</span>
-            <span>WireGuard VPN distribuída para 4 membros do time — acesso seguro ao novo ambiente garantido.</span>
-          </div>
-          <div class="win-item">
-            <span class="win-icon">🌿</span>
-            <span>Importação de Cars, PRODES e IBAMA integrada ao Agroplus — dados ambientais disponíveis para consulta.</span>
-          </div>
-          <div class="win-item">
-            <span class="win-icon">📱</span>
-            <span>2 PRs mergeados no app mobile — correções críticas no formulário dinâmico entregues.</span>
+            <span class="win-icon">🧪</span>
+            <span><strong>Thayse</strong> — 2 PRs mergeados no app mobile. Validações Biodiesel, Minerva e autenticação CAR concluídas.</span>
           </div>
           <div class="win-item">
             <span class="win-icon">🛠</span>
-            <span>~40 cards concluídos no período — suporte, atendimentos e melhorias entregues pelo time.</span>
+            <span><strong>Gustavo</strong> — ~40 cards concluídos no período, cobrindo Agrotrace, Checkmilk e suporte de TI geral.</span>
           </div>
         </div>
       </section>
 
-      <!-- ── 12 · Exit ─────────────────────────────────── -->
+      <!-- ── 14 · Exit ─────────────────────────────────── -->
       <section class="slide slide-cover"
                data-file="exit.ts"
                data-icon="🚪"
@@ -510,7 +598,7 @@
   <div class="navbar">
     <button class="nav-btn" id="nav-prev">← prev</button>
     <div class="nav-dots" id="nav-dots"></div>
-    <span class="nav-counter" id="nav-counter">1 / 12</span>
+    <span class="nav-counter" id="nav-counter">1 / 14</span>
     <button class="nav-btn" id="nav-next">next →</button>
     <span style="font-size:.7rem;color:#45475a;margin-left:1rem">
       Use <kbd style="font-family:monospace;background:#1a2d45;border:1px solid #3d5060;border-radius:3px;padding:1px 5px;font-size:.65rem">←</kbd>
