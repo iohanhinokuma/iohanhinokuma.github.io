@@ -35,7 +35,7 @@ const EDITIONS = [
   {
     number: 2,
     title: "Migração do Ambiente",                              // tema da edição
-    date: "2026-04-24",                     // data da apresentação
+    date: "2026-05-15",                     // data da apresentação
     period: { start: "2026-04-24", end: "2026-05-15" },
     presentationUrl: "edition-02/spotlight.html",
     cards: [
