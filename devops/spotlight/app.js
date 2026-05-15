@@ -94,26 +94,36 @@ const TAG_COLORS = {
 // ──────────────────────────────────────────────────────────
 
 const STATUS_META = {
+  hoje:        { label: "Hoje",        css: "hoje"        },
   apresentado: { label: "Apresentado", css: "apresentado" },
   proxima:     { label: "Próxima",     css: "proxima"     },
   planejada:   { label: "Planejada",   css: "planejada"   },
 };
 
+function parseLocalDate(str) {
+  const [y, m, d] = str.split("-").map(Number);
+  const dt = new Date(y, m - 1, d);
+  dt.setHours(0, 0, 0, 0);
+  return dt;
+}
+
 function computeStatuses(editions) {
   const today = new Date();
   today.setHours(0, 0, 0, 0);
+  const todayTs = today.getTime();
 
   const futureTimes = editions
-    .map(ed => new Date(ed.date).getTime())
-    .filter(t => t >= today.getTime());
+    .map(ed => parseLocalDate(ed.date).getTime())
+    .filter(t => t > todayTs);
   const nextTs = futureTimes.length ? Math.min(...futureTimes) : null;
 
   return editions.map(ed => {
-    const ts = new Date(ed.date).getTime();
+    const ts = parseLocalDate(ed.date).getTime();
     const status =
-      ts < today.getTime()    ? "apresentado" :
-      ts === nextTs           ? "proxima"     :
-                                "planejada";
+      ts === todayTs ? "hoje"        :
+      ts < todayTs   ? "apresentado" :
+      ts === nextTs  ? "proxima"     :
+                       "planejada";
     return { ...ed, status };
   });
 }

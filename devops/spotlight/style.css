@@ -164,6 +164,7 @@ main {
   border: 1px solid;
 }
 
+.status-hoje        { color: var(--primary); background: var(--primary-dim); border-color: var(--primary); }
 .status-apresentado { color: var(--green);  background: var(--green-bg);  border-color: var(--green); }
 .status-proxima     { color: var(--amber);  background: var(--amber-bg);  border-color: var(--amber); }
 .status-planejada   { color: var(--gray);   background: var(--gray-bg);   border-color: var(--gray);  }
