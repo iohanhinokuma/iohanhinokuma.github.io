@@ -428,7 +428,7 @@ html, body {
 
 .card-section p, .card-section ul {
   font-size: 0.86rem;
-  color: var(--muted);
+  color: #c9d6e3;
   line-height: 1.6;
 }
 .card-section ul { padding-left: 1.1rem; }
