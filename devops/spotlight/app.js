@@ -83,7 +83,7 @@ const EDITIONS = [
     presentationUrl: "edition-05/spotlight.html",
     cards: [
       { title: "Protocolo PCV — Biodiesel-Cacau",     description: "Cadastro e importação do Protocolo PCV em testes no dev e validação da coluna Protocolo na Forma de Cálculo do Ranking (#12753).", tag: "CI/CD" },
-      { title: "Importação genérica & atendimentos",  description: "#12549 importação genérica de produtores e propriedades no CheckMilk, fix de pipelines e atendimentos Esley/Thais + 1:1 Agroplus.", tag: "Infraestrutura" },
+      { title: "Importação genérica & atendimentos",  description: "#12549 importação genérica de produtores e propriedades na tela de importações, fix de pipelines e atendimentos a usuários + alinhamentos 1:1.", tag: "Infraestrutura" },
       { title: "Lote de validações de cards",         description: "6 validações OK: reaproveitamento de respostas, Better Auth v2/MFA, comunicações com produtores, Atualizar Ranking, Bloco Repetível e coluna de preenchimento.", tag: "Deploy" },
       { title: "Novos projetos & protocolos",         description: "Protocolos CheckFoods e CheckMilk, novos projetos com form dinâmico e forms dinâmicos do Sartori (#12292, #12718, #12728, #12536, #12648).", tag: "CI/CD" },
       { title: "Relatórios, exportações e suporte",   description: "Ajustes nos relatórios Checksheep e JBS, filtro/exportação Excel do form dinâmico, auto-atendimento GLPI na home e suporte a impressoras/pipelines.", tag: "Monitoramento" },
