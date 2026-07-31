@@ -93,6 +93,32 @@ const EDITIONS = [
       { title: "Ambiente, 2FA e VPN",                 description: "Alinhamento do ambiente de desenvolvimento, código/fluxo de 2FA e testes de conexão na VPN.", tag: "Infraestrutura" },
     ],
   },
+  {
+    number: 6,
+    title: "Citros, PEC & Protocolos",
+    date: "2026-07-31",
+    period: { start: "2026-07-10", end: "2026-07-30" },
+    presentationUrl: "edition-06/spotlight.html",
+    cards: [
+      { title: "Citros — Dashboards & Painel Sanitário", description: "#12977 filtro de variedade e #12962 semântica visual do comparativo do Painel Sanitário validados, #12861 carregamento de dashboards e #12943 consolidação do Dashboard Sanitário + relatórios de Citros.", tag: "CI/CD" },
+      { title: "Protocolos, Ranking & respostas dinâmicas", description: "#12854 ranking de medalhas por protocolo no CMS, #12881 editabilidade mobile em protocolos importados, parametrização NCP/PCV entregue e #12869/#12872 respostas dinâmicas + painel de sessões (#12794).", tag: "Deploy" },
+      { title: "Infra, custos & importações", description: "Ajustes de ingress/cache, proxy nginx AWS, revisão de custos Azure & AWS, migração de banco p/ Azure e importação genérica de produtores/propriedades (#12753, #12549).", tag: "Infraestrutura" },
+      { title: "Módulo PEC — variáveis, justificativas & RAT", description: "#12971 variáveis da descrição de atendimento, #12831 justificativas PEC, #12840 melhorias, #12817 liberação p/ projeto e correções de RAT (#12902, #12888) + perfis CheckMilk no Pectrace (#12959).", tag: "CI/CD" },
+      { title: "Relatórios, 2FA & CheckMilk", description: "Relatório de DG Boas Práticas, #12863 blocos repetíveis, #12882 recomendação automática, capa Aprosoja (#12913), 2FA/Magic Link (#12963, #12857) e sincronização CheckMilk (#12954, #12914).", tag: "Monitoramento" },
+      { title: "Usuários, acessos & treinamentos", description: "Criação/ajuste de usuários e senhas (#12982, #12987, #12827), atendimentos (#12988, #12921, #12923, #12890) e treinamentos 3S, Norte Pioneiro PR e Biodiesel-Cacau.", tag: "Deploy" },
+      { title: "Biodiesel-Cacau & Releases", description: "#12802 cálculo de área (HA) + perfil PCV e ajustes Débora, recibo safra 24/25 (#12903), Releases 104 (entregue) e 106 (aguardando design) e PR 11406 protocolo p/ animais lactantes.", tag: "Geral" },
+      { title: "Pull Requests & QA — mobile", description: "15 PRs: MFA (11471), envio PEC erro 409 (11451), tabela de qualidade do leite no RAT (11482), sync de dados (11313), módulo financeiro (11398) e form dinâmico (11381, 11433) + Test Cases.", tag: "Deploy" },
+      { title: "Suporte, atendimentos & Citros", description: "Ajustes no Form Viveiros e acessos do Citros (#12967, #12972, #12968), configuração de impressoras/celulares, erros de impressão (CheckMilk) e credenciais/reset de senha (AgroPlus, Citros, Minerva, CheckWork).", tag: "Segurança" },
+    ],
+  },
+  {
+    number: 7,
+    title: "A definir",
+    date: "2026-08-21",
+    period: { start: "2026-07-31", end: "2026-08-20" },
+    presentationUrl: null, // "Em breve" — apresentação ainda não publicada
+    // sem cards → botões desabilitados e status "planejada"
+  },
 ];
 
 // ============================================================
