@@ -49,6 +49,7 @@
             <span class="presenter-chip">⚙ Iohan</span>
             <span class="presenter-chip">🛠 Gustavo</span>
             <span class="presenter-chip">🧪 Thayse</span>
+            <span class="presenter-chip">🔒 Lucas</span>
           </div>
           <div class="cover-stack">
             <span class="stack-tag t-k8s">Citros</span>
@@ -71,7 +72,8 @@
   <span class="c-prop">edition</span>: <span class="c-num">6</span>
   <span class="c-prop">theme</span>: <span class="c-str">"Citros, PEC &amp; Protocolos"</span>
   <span class="c-prop">team</span>: <span class="c-brace">[</span>
-    <span class="c-str">"Iohan"</span>, <span class="c-str">"Gustavo"</span>, <span class="c-str">"Thayse"</span>
+    <span class="c-str">"Iohan"</span>, <span class="c-str">"Gustavo"</span>,
+    <span class="c-str">"Thayse"</span>, <span class="c-str">"Lucas"</span>
   <span class="c-brace">]</span>
   <span class="c-prop">cards</span>: <span class="c-num">127</span>
   <span class="c-prop">demandas</span>: <span class="c-num">20</span>
@@ -139,6 +141,10 @@
             <tr>
               <td class="a-who">Thayse</td>
               <td>Suporte, atendimentos &amp; Citros</td>
+            </tr>
+            <tr>
+              <td class="a-who">Lucas</td>
+              <td>Ambiente, Infisical &amp; migrações (Azure / Cloudflare)</td>
             </tr>
           </tbody>
         </table>
@@ -543,10 +549,52 @@
       </section>
 
       <!-- ══════════════════════════════════════════════════
+           LUCAS
+      ════════════════════════════════════════════════════ -->
+
+      <!-- ── 13 · Ambiente, Infisical & migrações ──────── -->
+      <section class="slide slide-card"
+               data-file="infra-ambiente.md"
+               data-icon="🔒"
+               data-section="LUCAS"
+               data-presenter="Lucas">
+        <div class="card-meta">
+          <span class="card-id">infra / plataforma</span>
+          <span class="card-tag ct-sec">Infraestrutura</span>
+        </div>
+        <h2 class="card-slide-title">Ambiente, Infisical &amp; migrações</h2>
+        <div class="card-body triple">
+          <div class="card-section solution">
+            <div class="section-label">🗄 banco de dados</div>
+            <ul>
+              <li>Atualização do MySQL — Produção e Desenvolvimento (RDS)</li>
+              <li>Implantação do MySQL na Azure (dump de produção)</li>
+            </ul>
+          </div>
+          <div class="card-section impact">
+            <div class="section-label">☁ infra &amp; DNS</div>
+            <ul>
+              <li>Worker Infisical no AKS de produção + integração com OPS-TOOLS</li>
+              <li>Migração DNS projecttrace.com.br → Cloudflare</li>
+              <li>Migração DNS e rotas do proxy → AKS de produção</li>
+            </ul>
+          </div>
+          <div class="card-section note">
+            <div class="section-label">🔜 próximos passos</div>
+            <ul>
+              <li>Migrar produção p/ consumir secrets no OPS-TOOLS</li>
+              <li>Testes do banco na Azure → migrar produção após validação</li>
+              <li>Correção de rotas na Cloudflare (acesso aos nodes do AKS)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════════
            WRAP-UP
       ════════════════════════════════════════════════════ -->
 
-      <!-- ── 13 · Exit ─────────────────────────────────── -->
+      <!-- ── 14 · Exit ─────────────────────────────────── -->
       <section class="slide slide-cover"
                data-file="exit.ts"
                data-icon="🚪"
@@ -584,7 +632,7 @@
   <div class="navbar">
     <button class="nav-btn" id="nav-prev">← prev</button>
     <div class="nav-dots" id="nav-dots"></div>
-    <span class="nav-counter" id="nav-counter">1 / 13</span>
+    <span class="nav-counter" id="nav-counter">1 / 14</span>
     <button class="nav-btn" id="nav-next">next →</button>
     <span style="font-size:.7rem;color:#45475a;margin-left:1rem">
       Use <kbd style="font-family:monospace;background:#1a2d45;border:1px solid #3d5060;border-radius:3px;padding:1px 5px;font-size:.65rem">←</kbd>

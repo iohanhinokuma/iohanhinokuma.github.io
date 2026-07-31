@@ -109,6 +109,7 @@ const EDITIONS = [
       { title: "Biodiesel-Cacau & Releases", description: "#12802 cálculo de área (HA) + perfil PCV e ajustes Débora, recibo safra 24/25 (#12903), Releases 104 (entregue) e 106 (aguardando design) e PR 11406 protocolo p/ animais lactantes.", tag: "Geral" },
       { title: "Pull Requests & QA — mobile", description: "15 PRs: MFA (11471), envio PEC erro 409 (11451), tabela de qualidade do leite no RAT (11482), sync de dados (11313), módulo financeiro (11398) e form dinâmico (11381, 11433) + Test Cases.", tag: "Deploy" },
       { title: "Suporte, atendimentos & Citros", description: "Ajustes no Form Viveiros e acessos do Citros (#12967, #12972, #12968), configuração de impressoras/celulares, erros de impressão (CheckMilk) e credenciais/reset de senha (AgroPlus, Citros, Minerva, CheckWork).", tag: "Segurança" },
+      { title: "Ambiente, Infisical & migrações", description: "Atualização do MySQL em Produção/Dev (RDS) e implantação na Azure, worker Infisical no AKS de produção + integração OPS-TOOLS, migração de DNS do projecttrace.com.br e rotas do proxy para Cloudflare/AKS.", tag: "Infraestrutura" },
     ],
   },
   {
