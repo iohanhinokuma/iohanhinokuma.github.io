@@ -114,9 +114,28 @@ const EDITIONS = [
   },
   {
     number: 7,
-    title: "A definir",
+    title: "Safra 26/27, QA & Validações",
     date: "2026-08-21",
     period: { start: "2026-07-31", end: "2026-08-20" },
+    presentationUrl: "edition-07/spotlight.html",
+    cards: [
+      { title: "18 validações entregues", description: "Formulários Dinâmicos via Excel (#12956), perguntas geométricas (#13025), CAPTCHA configurável (#12929), visibilidade por grupos/filiais (#13089), pins nos mapas (#13005) e blocos repetíveis no Dashboard Citros (#13128).", tag: "CI/CD" },
+      { title: "Infra, builds & esteiras de deploy", description: "Setup de build e publicação do check-talent e do agrofit, esteira de deploy do Edital Fit, fix dos pipelines Agrotrace dev e permissões Class Solutions na Azure.", tag: "Infraestrutura" },
+      { title: "Reuniões & alinhamentos", description: "Lançamento Biodiesel MS, Agroplus (ACL, protocolo e formulários por grupos com Douglas), Formulário Citros com Cláudio, demandas Agrotrace com Sartori e Painel de Gestão com Thayse e Débora.", tag: "Geral" },
+      { title: "Relatório DG Boas Práticas", description: "#12830 construído ao longo do sprint, #13129 texto de conclusão do relatório DG Agroplus, #13020 disponibilização de relatórios e testes de parâmetros com Elias.", tag: "Monitoramento" },
+      { title: "Treinamentos, perfis & projetos", description: "Treinamentos Biodiesel MS (#13179), Cacau-Biodiesel/Nestlé (#13119) e Paisagens Sustentáveis (#13120, #13103), perfis CheckMilk no Pectrace (#12959) e na Qualificação Sergipe (#13041).", tag: "Deploy" },
+      { title: "App, envio de dados & sincronização", description: "Fila de envio e anexos (#13047, #13073, #13074), sincronismo Agrotrace/CheckMilk (#13015, #13014), performance (#13191), teclado (#13163) e agenda automática ao filtrar (#13034).", tag: "Deploy" },
+      { title: "Suporte, WhatsApp & acessos", description: "Novos chips e números de suporte (#13130, #13139, #13122), acessos CheckWork e Cacau-Biodiesel (#13190, #13150, #13094), backup mensal do Jasper (#13186) e investigações de dados.", tag: "Segurança" },
+      { title: "Biodiesel-Soja — Safra 26/27", description: "Virada de safra Centerplan: acompanhamento consolidado (#13185), croqui e perfil 25→26 em progresso (#13178, #13180), modelo de recibo (#13116, Ticket 308) e laudos (Ticket 296).", tag: "CI/CD" },
+      { title: "16 PRs mergeados & QA mobile", description: "Form dinâmico (11509, 11630, 11632), estabilidade do app no croqui e anexos (11692, 11698, 11743), módulo PEC (11539, 11562), DG do animal (11621, 11547) e Test Case 13024.", tag: "Deploy" },
+      { title: "Importações, Citros & Releases", description: "Importação Checksheep (#13161) e planilha Citros (#13100), correção de dados importados (#13095, #13101), Form Viveiros (#13087), Release 107 aguardando design (#13110) e suporte a celulares/impressoras.", tag: "Monitoramento" },
+    ],
+  },
+  {
+    number: 8,
+    title: "A definir",
+    date: "2026-09-11",
+    period: { start: "2026-08-21", end: "2026-09-10" },
     presentationUrl: null, // "Em breve" — apresentação ainda não publicada
     // sem cards → botões desabilitados e status "planejada"
   },
