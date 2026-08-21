@@ -130,7 +130,7 @@ const EDITIONS = [
       { title: "16 PRs mergeados & QA mobile", description: "Form dinâmico (11509, 11630, 11632), estabilidade do app no croqui e anexos (11692, 11698, 11743), módulo PEC (11539, 11562), DG do animal (11621, 11547) e Test Case 13024.", tag: "Deploy" },
       { title: "Importações, Citros & Releases", description: "Importação Checksheep (#13161) e planilha Citros (#13100), correção de dados importados (#13095, #13101), Form Viveiros (#13087), Release 107 aguardando design (#13110) e suporte a celulares/impressoras.", tag: "Monitoramento" },
       { title: "Novo ambiente de produção — redes & VPN", description: "Implantação do novo ambiente com segregação de redes, configuração dos túneis VPN, regras de rede e DNS e validação da comunicação entre a rede de aplicação e o banco de dados.", tag: "Infraestrutura" },
-      { title: "Infisical, Paisagens Sustentáveis & Wizard", description: "Infisical implantado no novo ambiente de produção, app Paisagens Sustentáveis migrado do GitHub para o Azure DevOps com pipelines e leitura de variáveis via Infisical. Wizard de aplicações em finalização.", tag: "Segurança" },
+      { title: "Infisical & Paisagens Sustentáveis", description: "Infisical implantado no novo ambiente de produção, app Paisagens Sustentáveis migrado do GitHub para o Azure DevOps com pipelines e leitura de variáveis de ambiente via Infisical.", tag: "Segurança" },
     ],
   },
   {
@@ -140,6 +140,10 @@ const EDITIONS = [
     period: { start: "2026-08-21", end: "2026-09-10" },
     presentationUrl: null, // "Em breve" — apresentação ainda não publicada
     // sem cards → botões desabilitados e status "planejada"
+    // Pendente desta edição:
+    //   Lucas — Wizard de aplicações (provisionamento padronizado de novas
+    //   aplicações no novo ambiente de produção) — estava em finalização no
+    //   fechamento da #07.
   },
 ];
 
