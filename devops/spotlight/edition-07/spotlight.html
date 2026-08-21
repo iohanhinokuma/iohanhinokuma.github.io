@@ -49,12 +49,14 @@
             <span class="presenter-chip">⚙ Iohan</span>
             <span class="presenter-chip">🛠 Gustavo</span>
             <span class="presenter-chip">🧪 Thayse</span>
+            <span class="presenter-chip">🔒 Lucas</span>
           </div>
           <div class="cover-stack">
             <span class="stack-tag t-k8s">Biodiesel Safra 26/27</span>
             <span class="stack-tag t-azure">Form Dinâmico</span>
             <span class="stack-tag t-terraform">16 PRs mobile</span>
             <span class="stack-tag t-pwsh">Relatório DG</span>
+            <span class="stack-tag t-ansible">Novo ambiente prod</span>
             <span class="stack-tag t-yaml">Release 107</span>
           </div>
         </div>
@@ -73,7 +75,7 @@
   <span class="c-prop">theme</span>: <span class="c-str">"Safra 26/27, QA &amp; Validações"</span>
   <span class="c-prop">team</span>: <span class="c-brace">[</span>
     <span class="c-str">"Iohan"</span>, <span class="c-str">"Gustavo"</span>,
-    <span class="c-str">"Thayse"</span>
+    <span class="c-str">"Thayse"</span>, <span class="c-str">"Lucas"</span>
   <span class="c-brace">]</span>
   <span class="c-prop">cards</span>: <span class="c-num">137</span>
   <span class="c-prop">demandas</span>: <span class="c-num">27</span>
@@ -141,6 +143,10 @@
             <tr>
               <td class="a-who">Thayse</td>
               <td>Suporte, Citros &amp; Releases</td>
+            </tr>
+            <tr>
+              <td class="a-who">Lucas</td>
+              <td>Novo ambiente de produção — redes, VPN &amp; Infisical</td>
             </tr>
           </tbody>
         </table>
@@ -609,10 +615,54 @@
       </section>
 
       <!-- ══════════════════════════════════════════════════
+           LUCAS
+      ════════════════════════════════════════════════════ -->
+
+      <!-- ── 13 · Novo ambiente de produção ────────────── -->
+      <section class="slide slide-card"
+               data-file="novo-ambiente.md"
+               data-icon="🔒"
+               data-section="LUCAS"
+               data-presenter="Lucas">
+        <div class="card-meta">
+          <span class="card-id">infra / plataforma</span>
+          <span class="card-tag ct-sec">Infraestrutura</span>
+        </div>
+        <h2 class="card-slide-title">Novo Ambiente de Produção — Redes, VPN &amp; Infisical</h2>
+        <div class="card-body triple">
+          <div class="card-section solution">
+            <div class="section-label">🔐 segregação de redes &amp; VPN</div>
+            <ul>
+              <li>Implantação do <strong>novo ambiente de produção</strong> com segregação de redes</li>
+              <li>Configuração dos <strong>túneis VPN</strong></li>
+              <li>Regras de rede e <strong>DNS</strong></li>
+              <li>Validação da comunicação entre a rede de aplicação e o banco de dados</li>
+            </ul>
+          </div>
+          <div class="card-section impact">
+            <div class="section-label">🔑 infisical &amp; migração</div>
+            <ul>
+              <li><strong>Infisical</strong> implantado no novo ambiente de produção</li>
+              <li>App <strong>Paisagens Sustentáveis</strong> implantado no novo ambiente</li>
+              <li>Migração do GitHub → <strong>Azure DevOps</strong></li>
+              <li>Construção dos pipelines</li>
+              <li>Integração com o Infisical para leitura de variáveis de ambiente</li>
+            </ul>
+          </div>
+          <div class="card-section note">
+            <div class="section-label">🧩 wizard de aplicações</div>
+            <ul>
+              <li><strong>Em finalização</strong> — provisionamento padronizado de novas aplicações no ambiente</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════════
            WRAP-UP
       ════════════════════════════════════════════════════ -->
 
-      <!-- ── 13 · Exit ─────────────────────────────────── -->
+      <!-- ── 14 · Exit ─────────────────────────────────── -->
       <section class="slide slide-cover"
                data-file="exit.ts"
                data-icon="🚪"
@@ -650,7 +700,7 @@
   <div class="navbar">
     <button class="nav-btn" id="nav-prev">← prev</button>
     <div class="nav-dots" id="nav-dots"></div>
-    <span class="nav-counter" id="nav-counter">1 / 13</span>
+    <span class="nav-counter" id="nav-counter">1 / 14</span>
     <button class="nav-btn" id="nav-next">next →</button>
     <span style="font-size:.7rem;color:#45475a;margin-left:1rem">
       Use <kbd style="font-family:monospace;background:#1a2d45;border:1px solid #3d5060;border-radius:3px;padding:1px 5px;font-size:.65rem">←</kbd>
