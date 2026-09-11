@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevOps Spotlight — Edição #08</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../spotlight.css">
+</head>
+<body>
+<div class="vscode">
+
+  <!-- ─── Title Bar ─────────────────────────────────────── -->
+  <div class="titlebar">
+    <a class="hub-link" href="../">⌂ hub</a>
+    <button class="timer-btn" id="timer-btn">▶ 00:00</button>
+  </div>
+
+  <!-- ─── Tab Bar ──────────────────────────────────────── -->
+  <div class="tabbar" id="tabbar"></div>
+
+  <!-- ─── Main ─────────────────────────────────────────── -->
+  <div class="main">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="sidebar-section-title">EXPLORER</div>
+      <div id="sidebar-files"></div>
+    </div>
+
+    <!-- Slides -->
+    <div class="slides-container">
+
+      <!-- ── 01 · Capa ─────────────────────────────────── -->
+      <section class="slide slide-cover"
+               data-file="README.md"
+               data-icon="📋"
+               data-section=""
+               data-presenter="">
+        <div class="cover-left">
+          <div class="cover-edition">// DEVOPS SPOTLIGHT — EDITION #08</div>
+          <h1 class="cover-title">
+            Solo, Safra 26/27 &amp;<br>
+            <span class="hl">Relatórios</span>
+          </h1>
+          <div class="cover-meta">11 de setembro de 2026 · 21/08 – 10/09</div>
+          <div class="cover-presenters">
+            <span class="presenter-chip">⚙ Iohan</span>
+            <span class="presenter-chip">🛠 Gustavo</span>
+            <span class="presenter-chip">🧪 Thayse</span>
+            <span class="presenter-chip">🔒 Lucas</span>
+          </div>
+          <div class="cover-stack">
+            <span class="stack-tag t-k8s">Solo &amp; Nutrição</span>
+            <span class="stack-tag t-azure">Safra 26/27</span>
+            <span class="stack-tag t-terraform">16 PRs mobile</span>
+            <span class="stack-tag t-pwsh">Relatório DG</span>
+            <span class="stack-tag t-ansible">Check-Talent / Tenders</span>
+            <span class="stack-tag t-yaml">Releases 108 / 109</span>
+          </div>
+        </div>
+        <div class="cover-right">
+          <div class="code-panel">
+            <div class="code-panel-header">
+              <span>📋</span>
+              <span>README.md — devops-sprint-08</span>
+            </div>
+            <div class="code-panel-body">
+<span class="c-comment"># DevOps Spotlight — Edição #08</span>
+<span class="c-comment">## 21/08 - 10/09/2026</span>
+
+<span class="c-kw">class</span> <span class="c-cls">DevOpsSpotlight</span> <span class="c-brace">{</span>
+  <span class="c-prop">edition</span>: <span class="c-num">8</span>
+  <span class="c-prop">theme</span>: <span class="c-str">"Solo, Safra 26/27 &amp; Relatórios"</span>
+  <span class="c-prop">team</span>: <span class="c-brace">[</span>
+    <span class="c-str">"Iohan"</span>, <span class="c-str">"Gustavo"</span>,
+    <span class="c-str">"Thayse"</span>, <span class="c-str">"Lucas"</span>
+  <span class="c-brace">]</span>
+  <span class="c-prop">cards</span>: <span class="c-num">117</span>
+  <span class="c-prop">demandas</span>: <span class="c-num">22</span>
+  <span class="c-prop">tickets</span>: <span class="c-num">3</span>
+  <span class="c-prop">pullRequests</span>: <span class="c-num">16</span>
+<span class="c-brace">}</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── 02 · Agenda ───────────────────────────────── -->
+      <section class="slide slide-agenda"
+               data-file="agenda.ts"
+               data-icon="📅"
+               data-section=""
+               data-presenter="">
+        <div class="slide-header">
+          <span class="slide-label">agenda.ts</span>
+          <h2 class="slide-title">Agenda da Edição</h2>
+        </div>
+        <table class="agenda-table">
+          <thead>
+            <tr>
+              <th>Apresentador</th>
+              <th>Tópico</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="a-who">Iohan</td>
+              <td>Sprint em números</td>
+            </tr>
+            <tr>
+              <td class="a-who">Iohan</td>
+              <td>Validações do sprint <span class="demo-badge">8 cards</span></td>
+            </tr>
+            <tr>
+              <td class="a-who">Iohan</td>
+              <td>Novos produtos, builds &amp; ambientes</td>
+            </tr>
+            <tr>
+              <td class="a-who">Iohan</td>
+              <td>Reuniões, atendimentos &amp; alinhamentos</td>
+            </tr>
+            <tr>
+              <td class="a-who">Gustavo</td>
+              <td>Relatórios, procedures &amp; Jasper</td>
+            </tr>
+            <tr>
+              <td class="a-who">Gustavo</td>
+              <td>Projetos, ambientes &amp; publicações</td>
+            </tr>
+            <tr>
+              <td class="a-who">Gustavo</td>
+              <td>Treinamentos, suporte &amp; canais</td>
+            </tr>
+            <tr>
+              <td class="a-who">Thayse</td>
+              <td>Biodiesel — Safra 26/27 &amp; Recibo</td>
+            </tr>
+            <tr>
+              <td class="a-who">Thayse</td>
+              <td>Pull Requests &amp; QA — mobile <span class="demo-badge">16 PRs</span></td>
+            </tr>
+            <tr>
+              <td class="a-who">Thayse</td>
+              <td>Suporte, notebooks &amp; atendimentos</td>
+            </tr>
+            <tr>
+              <td class="a-who">Lucas</td>
+              <td>Wizard de aplicações, VPN &amp; plataforma</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- ── 03 · Stats ────────────────────────────────── -->
+      <section class="slide slide-stats"
+               data-file="stats.json"
+               data-icon="📊"
+               data-section=""
+               data-presenter="Iohan">
+        <div class="slide-header">
+          <span class="slide-label">stats.json</span>
+          <h2 class="slide-title">Sprint em números</h2>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-value">139</div>
+            <div class="stat-label">Cards no período</div>
+            <div class="stat-sub">21/08 – 10/09/2026</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">117</div>
+            <div class="stat-label">Cards associados a nós</div>
+            <div class="stat-sub">101 atendidos · 16 em aberto</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">22</div>
+            <div class="stat-label">Demandas p/ outros times</div>
+            <div class="stat-sub">14 atendidas · 8 abertas</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">3</div>
+            <div class="stat-label">Tickets GLPI</div>
+            <div class="stat-sub">1 atendido · 2 abertos</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════════
+           IOHAN
+      ════════════════════════════════════════════════════ -->
+
+      <!-- ── 04 · Validações do Sprint ─────────────────── -->
+      <section class="slide slide-card"
+               data-file="validacoes.md"
+               data-icon="⚙"
+               data-section="IOHAN"
+               data-presenter="Iohan">
+        <div class="card-meta">
+          <span class="card-id">agrotrace / validação</span>
+          <span class="card-tag ct-ci">8 validações</span>
+        </div>
+        <h2 class="card-slide-title">Validações do Sprint</h2>
+        <div class="card-body triple">
+          <div class="card-section solution">
+            <div class="section-label">🌱 solo &amp; nutrição</div>
+            <ul>
+              <li>#13275 — Módulo <strong>Solo &amp; Nutrição</strong>: importação de laudos, interpretação com semáforo e recomendações de calagem/adubação</li>
+              <li>#13305 — Filtro por Certificadora na Análise do Solo</li>
+              <li>Testes do feat de Solo e Nutrição (01/09) e alinhamentos com Ronaldo sobre amostra de solo</li>
+            </ul>
+          </div>
+          <div class="card-section impact">
+            <div class="section-label">✓ formulários &amp; cadastros</div>
+            <ul>
+              <li>#13256 — Pergunta <strong>Talhão</strong> em configuração, resposta e exportação</li>
+              <li>#13217 — Novos campos de controle de peso em lote</li>
+              <li>#13264 — [FIX] Perguntas sem resposta em blocos repetíveis filtrados por produtor</li>
+            </ul>
+          </div>
+          <div class="card-section note">
+            <div class="section-label">✓ relatórios &amp; API</div>
+            <ul>
+              <li>#13289 — Erro ao gerar relatório "Imagens do Atendimento"</li>
+              <li>#13272 — Relatório de evolução — Agroplus</li>
+              <li>#13266 — [FIX] Mensagem clara para rotas inexistentes</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── 05 · Novos produtos, builds & ambientes ───── -->
+      <section class="slide slide-card"
+               data-file="builds-ambientes.md"
+               data-icon="☁"
+               data-section="IOHAN"
+               data-presenter="Iohan">
+        <div class="card-meta">
+          <span class="card-id">infra / builds</span>
+          <span class="card-tag ct-infra">Novos produtos</span>
+        </div>
+        <h2 class="card-slide-title">Novos Produtos, Builds &amp; Ambientes</h2>
+        <div class="card-body triple">
+          <div class="card-section solution">
+            <div class="section-label">🚀 check-talent &amp; check-tenders</div>
+            <ul>
+              <li><strong>Check-Talent</strong> — ajustes de build, variáveis e pipeline</li>
+              <li><strong>Check-Tenders</strong> — ajustes de build e migração de usuários para o novo banco</li>
+              <li>Bruno — alinhamento dos ajustes do Check-Tenders</li>
+            </ul>
+          </div>
+          <div class="card-section impact">
+            <div class="section-label">🔧 deploy &amp; cluster</div>
+            <ul>
+              <li><strong>EditalFit</strong> — investigação dos erros de deploy (c/ Bruno)</li>
+              <li>Ajustes de memória no <strong>cluster de dev</strong></li>
+              <li>Fechamento da Sprint Mobile — <strong>108 → 110</strong></li>
+            </ul>
+          </div>
+          <div class="card-section note">
+            <div class="section-label">🎯 apresentação ICA</div>
+            <ul>
+              <li>Reunião de apresentação do sistema — Priscila / <strong>ICA</strong></li>
+              <li>Geração das telas para a apresentação ICA</li>
+              <li>Ronaldo — telas de Atendimento e Painel do Gestor</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── 06 · Reuniões & atendimentos ──────────────── -->
+      <section class="slide slide-card"
+               data-file="reunioes.md"
+               data-icon="🤝"
+               data-section="IOHAN"
+               data-presenter="Iohan">
+        <div class="card-meta">
+          <span class="card-id">devops / alinhamentos</span>
+          <span class="card-tag ct-mon">Reuniões</span>
+        </div>
+        <h2 class="card-slide-title">Reuniões, Atendimentos &amp; Alinhamentos</h2>
+        <div class="card-body triple">
+          <div class="card-section solution">
+            <div class="section-label">🌾 biodiesel &amp; JBS</div>
+            <ul>
+              <li>Reunião <strong>Biodiesel MS</strong> (31/08) e <strong>Biodiesel GO</strong> (01/09)</li>
+              <li>Marcia — alinhamento das demandas Biodiesel</li>
+              <li>Alinhamento de demandas <strong>JBS</strong> + análise das novas feats</li>
+              <li>1:1 Ronaldo — Dashboard Ater (JBS) e feats de Solo e Nutrição</li>
+            </ul>
+          </div>
+          <div class="card-section impact">
+            <div class="section-label">📞 atendimentos</div>
+            <ul>
+              <li>Agroplus — problema para concluir atendimentos no app</li>
+              <li>Reinaldo — Agroplus: execução de atendimento no app</li>
+              <li>Heloisa Sabino — Agroplus: relatório de evolução de acompanhamentos</li>
+              <li>Camila — Minerva: auxílio com links e relatórios</li>
+              <li>Humberto — problemas na PlayStore</li>
+              <li>Cláudio — permissões de usuários e dashboard de Viveiros (Citros)</li>
+            </ul>
+          </div>
+          <div class="card-section note">
+            <div class="section-label">🤝 time &amp; roadmap</div>
+            <ul>
+              <li>1:1 <strong>Lucas</strong> — validação do roadmap e demandas DevOps</li>
+              <li>1:1 Douglas — ajustes nos formulários</li>
+              <li>Thayse — revisão das querys de inserção de croquis (Cacau e Biodiesel)</li>
+              <li>Alinhamentos Agrotrace (01/09 e 08/09)</li>
+              <li>Elaboração do Spotlight #07</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════════
+           GUSTAVO
+      ════════════════════════════════════════════════════ -->
+
+      <!-- ── 07 · Relatórios & procedures ──────────────── -->
+      <section class="slide slide-card"
+               data-file="relatorios.md"
+               data-icon="🛠"
+               data-section="GUSTAVO"
+               data-presenter="Gustavo">
+        <div class="card-meta">
+          <span class="card-id">agrotrace / relatórios</span>
+          <span class="card-tag ct-ci">Relatórios</span>
+        </div>
+        <h2 class="card-slide-title">Relatórios, Procedures &amp; Jasper</h2>
+        <div class="card-body triple">
+          <div class="card-section solution">
+            <div class="section-label">📊 relatório DG &amp; boas práticas</div>
+            <ul>
+              <li>#12830 — <strong>Relatório de Diagnóstico de Boas Práticas</strong> concluído</li>
+              <li>#13215 — Publicação do relatório de boas práticas no <strong>Jasper</strong></li>
+              <li>#13248 — Edição do relatório de DG Boas Práticas</li>
+              <li>#13307 — Páginas de encerramento — DG Agroplus</li>
+              <li>#13332 — Página de assinatura — DG Aprosoja</li>
+              <li>#13377 — Coluna faltante no relatório DG 3S</li>
+            </ul>
+          </div>
+          <div class="card-section impact">
+            <div class="section-label">⚙ procedures &amp; produtividade</div>
+            <ul>
+              <li>#13384 — Proteção contra divisão por zero na procedure <strong>getRankingPorImportancia</strong></li>
+              <li>#13197 — Atualização da pontuação do projeto (Biodiesel Cacau)</li>
+              <li>#13295 — Agrupamento de técnicos por filial no relatório de produtividade</li>
+              <li>#13235 / #13270 — Relatório de produtividade Biodiesel e colunas divergentes</li>
+              <li>#13269 — RAT de histórico total do produtor</li>
+            </ul>
+          </div>
+          <div class="card-section note">
+            <div class="section-label">🍊 citros, paisagens &amp; listas</div>
+            <ul>
+              <li>#13351 / #13387 — Novo relatório <strong>Paisagens Sustentáveis</strong> + publicação</li>
+              <li>#13352 — Relatório do Citros em Área Produtiva e Viveiros</li>
+              <li>#13318 — Relatório de form dinâmico — Citros</li>
+              <li>#13343 — Lista de atendimento com situação e técnico</li>
+              <li>#13366 — Contador de produtores da home (Aprosoja)</li>
+              <li>#13340 — Retirada do recibo no atendimento produtivo</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── 08 · Projetos, ambientes & publicações ────── -->
+      <section class="slide slide-card"
+               data-file="projetos-ambientes.md"
+               data-icon="📦"
+               data-section="GUSTAVO"
+               data-presenter="Gustavo">
+        <div class="card-meta">
+          <span class="card-id">agrotrace / projetos</span>
+          <span class="card-tag ct-deploy">Projetos &amp; Deploy</span>
+        </div>
+        <h2 class="card-slide-title">Projetos, Ambientes &amp; Publicações</h2>
+        <div class="card-body triple">
+          <div class="card-section solution">
+            <div class="section-label">🆕 novos projetos &amp; ambientes</div>
+            <ul>
+              <li>#13282 — Projeto <strong>Deodápolis MS 2026</strong> + form dinâmico</li>
+              <li>#13349 — Novo ambiente <strong>Pecuária e Genética</strong></li>
+              <li>#13296 — Preparativos do módulo PEC — <strong>Cargill Pro Leite</strong></li>
+              <li>#13206 — Publicação da nova API em Python — imagens de satélite</li>
+            </ul>
+          </div>
+          <div class="card-section impact">
+            <div class="section-label">🏠 home &amp; deploy</div>
+            <ul>
+              <li>#13207 — Novas páginas na home · #13214 — Atualização da home de dev</li>
+              <li>#13225 — Investigação do erro no deploy do Agrotrace</li>
+              <li>#13226 — Testes do Agrotrace com tradução</li>
+              <li>#13222 — Testes do Dashboard do Citros</li>
+              <li>Brenda — novos ícones do sistema para a home</li>
+            </ul>
+          </div>
+          <div class="card-section note">
+            <div class="section-label">🔍 diagnósticos &amp; dados</div>
+            <ul>
+              <li>#13353 — Consolidação em lote dos diagnósticos Biodiesel</li>
+              <li>#13361 — Alteração de diagnóstico e desativação de duplicado</li>
+              <li>#13243 — Consultores da safra e exclusão de atendimentos desativados</li>
+              <li>#13350 — Ativação e teste da função de assinatura digital</li>
+              <li>#13238 — Dados de esforço — Minerva</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── 09 · Treinamentos, suporte & canais ───────── -->
+      <section class="slide slide-card"
+               data-file="treinamentos-suporte.log"
+               data-icon="🎓"
+               data-section="GUSTAVO"
+               data-presenter="Gustavo">
+        <div class="card-meta">
+          <span class="card-id">devops / suporte-ti</span>
+          <span class="card-tag ct-sec">Treinos &amp; Suporte</span>
+        </div>
+        <h2 class="card-slide-title">Treinamentos, Suporte &amp; Canais</h2>
+        <div class="card-body triple">
+          <div class="card-section solution">
+            <div class="section-label">🎓 treinamentos</div>
+            <ul>
+              <li>#13261 / #13279 — Treinamento <strong>Biodiesel Soja</strong> (BrasilBio)</li>
+              <li>#13237 — Treinamento Biodiesel — relatórios (Marcia)</li>
+              <li>#13299 — Tira-dúvidas e solicitações — Kleber</li>
+              <li>#13268 — Dúvidas + disponibilização de relatórios</li>
+              <li>Tira-dúvidas Agrotrace web — Kleber e Tulio</li>
+            </ul>
+          </div>
+          <div class="card-section impact">
+            <div class="section-label">📱 dispositivos &amp; dados</div>
+            <ul>
+              <li>#13344 / #13300 / #13247 — Configuração e vínculo de impressora e celular</li>
+              <li>#13369 / #13362 — Acompanhamento do envio de dados (Marcos, Kerolem e William)</li>
+              <li>#13224 — Verificação de localizações — William</li>
+              <li>#13286 — Dificuldade com coleta de coordenada</li>
+              <li>#13345 — Recuperação de usuário do CheckWork</li>
+            </ul>
+          </div>
+          <div class="card-section note">
+            <div class="section-label">📞 canais de comunicação</div>
+            <ul>
+              <li>#13208 — Novo chip para envio de links</li>
+              <li>#13210 — Acompanhamento do novo chip de suporte nos canais</li>
+              <li>Alteração do número de suporte no Agrotrace e CheckMilk</li>
+              <li>Ronaldo — QR code para envio do link do form dinâmico</li>
+              <li>#13271 — Instalação do Google Drive</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════════
+           THAYSE
+      ════════════════════════════════════════════════════ -->
+
+      <!-- ── 10 · Biodiesel Safra 26/27 & Recibo ───────── -->
+      <section class="slide slide-card"
+               data-file="biodiesel-safra.ts"
+               data-icon="🧪"
+               data-section="THAYSE"
+               data-presenter="Thayse">
+        <div class="card-meta">
+          <span class="card-id">agrotrace / biodiesel</span>
+          <span class="card-tag ct-ci">Safra 26/27</span>
+        </div>
+        <h2 class="card-slide-title">Biodiesel — Safra 26/27 &amp; Recibo</h2>
+        <div class="card-body triple">
+          <div class="card-section solution">
+            <div class="section-label">🌾 virada de safra 25 → 26</div>
+            <ul>
+              <li>#13178 — Duplicar <strong>Croqui</strong> safra 25 → 26 (Biodiesel Soja) <strong>— concluído</strong></li>
+              <li>#13180 — Duplicar <strong>perfil</strong> safra 25 → 26 (Biodiesel Soja) <strong>— concluído</strong></li>
+              <li>#13200 — Ajustar Croqui safra 25 → 26 (Biodiesel Cacau)</li>
+              <li>#13319 — Importar Grupos — Biodiesel Soja</li>
+              <li>Ronaldo — duplicação do <code>perfil_resposta</code> da safra anterior</li>
+            </ul>
+          </div>
+          <div class="card-section impact">
+            <div class="section-label">🧾 recibo &amp; laudos</div>
+            <ul>
+              <li>#12911 — <strong>Conteúdo do Recibo</strong> desenvolvido <strong>(concluído)</strong></li>
+              <li>Ticket 308 — Recibo de análise de solos</li>
+              <li>#12621 — Ajustes Biodiesel-Soja (Débora)</li>
+              <li>#13245 — Funcionamento dos Laudos — Igor</li>
+              <li>Carlos — definição do modelo do recibo</li>
+            </ul>
+          </div>
+          <div class="card-section note">
+            <div class="section-label">📝 releases</div>
+            <ul>
+              <li>#13221 — <strong>Release 108</strong> escrita (aguardou design)</li>
+              <li>#13364 — <strong>Release 109</strong> <strong>(em progresso)</strong></li>
+              <li>Brenda — design das releases da sprint 108</li>
+              <li>#13252 — Inserir respostas da <code>propriedade_info</code> — Débora</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── 11 · Pull Requests & QA ───────────────────── -->
+      <section class="slide slide-card"
+               data-file="prs-qa.ts"
+               data-icon="🔀"
+               data-section="THAYSE"
+               data-presenter="Thayse">
+        <div class="card-meta">
+          <span class="card-id">agrotrace / mobile</span>
+          <span class="card-tag ct-deploy">16 PRs · 7 Test Cases</span>
+        </div>
+        <h2 class="card-slide-title">Pull Requests &amp; QA — mobile</h2>
+        <div class="card-body triple">
+          <div class="card-section solution">
+            <div class="section-label">✓ anexos, assinatura &amp; recibo</div>
+            <ul>
+              <li>PR 11864 — #13306 Dificuldade de anexar PDFs nos dados complementares</li>
+              <li>PR 11853 — #13171 #13262 Preview do documento antes de assinar + assinatura obrigatória do técnico</li>
+              <li>PR 11838 — #13278 Variáveis repetidas no recibo</li>
+              <li>PR 11757 — #13112 Recibo com valores por estado e dados do técnico</li>
+              <li>PR 11832 — #12945 Exibição de imagens nos relatórios PDF</li>
+            </ul>
+          </div>
+          <div class="card-section impact">
+            <div class="section-label">✓ coordenadas, lotes &amp; PEC</div>
+            <ul>
+              <li>PR 11814 — #13241 Perda de coordenadas durante o download</li>
+              <li>PR 11745 — #13157 Tentativas automáticas e fallback para falhas de GPS</li>
+              <li>PR 11795 — #13176 Campos dinâmicos e vínculo de atividade no cadastro de Lote e Animal</li>
+              <li>PR 11869 — #13309 Filtro de categoria por idade (macho e fêmea)</li>
+              <li>PR 11836 — #13172 Acesso ao módulo PEC com atendimento agendado</li>
+            </ul>
+          </div>
+          <div class="card-section note">
+            <div class="section-label">✓ formulários &amp; test cases</div>
+            <ul>
+              <li>PR 11734 — #13046 Formulários por grupo filial · PR 11717 — #12773 Pacotes de atendimento no app do produtor</li>
+              <li>PR 11686 — #13108 Duplicidade ao salvar respostas · PR 11690 — #12998 Limpar dados locais ao cancelar</li>
+              <li>PR 11665 — #12936 Formulário de informações da propriedade · PR 11751 — #13170 Questionário de perfis</li>
+              <li>TC 13380 / 13370 — [FIX] Evidências sem erro 400 e salvamento sem erro 500</li>
+              <li>TC 13338 / 13211 — Anexos com URL renovada e dupla codificação no Azure Blob</li>
+              <li>TC 13244 / 13310 / 13078 — Coluna PROTOCOLO, tela de usuários no CMS e múltiplas filiais</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── 12 · Suporte, notebooks & atendimentos ────── -->
+      <section class="slide slide-card"
+               data-file="suporte-atendimentos.md"
+               data-icon="🎧"
+               data-section="THAYSE"
+               data-presenter="Thayse">
+        <div class="card-meta">
+          <span class="card-id">agrotrace / suporte</span>
+          <span class="card-tag ct-sec">Suporte</span>
+        </div>
+        <h2 class="card-slide-title">Suporte, Notebooks &amp; Atendimentos</h2>
+        <div class="card-body triple">
+          <div class="card-section solution">
+            <div class="section-label">💻 notebooks, acessos &amp; app</div>
+            <ul>
+              <li>#13386 / #13383 / #13339 — Configuração de notebook (Aline, Natalia e Marcia)</li>
+              <li>#13363 — Login _CREA_Débora (Ticket 311) · #13367 — Não consegue logar no app</li>
+              <li>#13385 — Erro para cadastrar usuário no <strong>CheckMilk</strong> — Ailton</li>
+              <li>#13267 — Acessos AgroTrace — Agro Plus Brasil</li>
+              <li>#13199 — Projeto Citros não aparece no CheckWork — Cristiane</li>
+              <li>#13227 — Não abre nenhum site — Marcia</li>
+            </ul>
+          </div>
+          <div class="card-section impact">
+            <div class="section-label">📤 envio de dados &amp; coordenadas</div>
+            <ul>
+              <li>#13196 — Atendimentos faltando respostas — Débora</li>
+              <li>#13205 / #13321 / #13326 — Problemas para enviar todas as respostas (Erika e Manoel)</li>
+              <li>#13308 — Não consegue anexar PDF em resposta 3S</li>
+              <li>#13239 — Coordenadas sumindo do atendimento (Biodiesel Cacau)</li>
+              <li>#13156 — Falha para coletar coordenada · #13302 — Preencher coordenadas</li>
+              <li>#13160 — App fechando no croqui — Reinaldo / Leonardo</li>
+            </ul>
+          </div>
+          <div class="card-section note">
+            <div class="section-label">🖨 dispositivos &amp; cadastros</div>
+            <ul>
+              <li>#13324 / #13303 / #13273 — Testes de aplicativo + impressora (Marcio, Ricardo N e Pedro A.)</li>
+              <li>#13337 / #13290 / #13265 / #13246 — Configuração de celular + impressora</li>
+              <li>#13301 / #13292 — Inativar cadastros duplicados — Marcia</li>
+              <li>#13213 / #13218 — Reativar propriedade e desativar produtor — Marcia</li>
+              <li>#13288 — Desvincular produtores dos técnicos do GO</li>
+              <li>#13284 — Obrigar campo grupo (Agroplus) · #13304 — Verificar backup</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════════
+           LUCAS
+      ════════════════════════════════════════════════════ -->
+
+      <!-- ── 13 · Plataforma, VPN & Wizard ─────────────── -->
+      <!-- ATENÇÃO: o arquivo de standups não traz entradas próprias do Lucas.
+           Os itens abaixo foram reconstruídos a partir das menções nos 1:1 dos
+           outros membros + a pendência herdada da edição #07.
+           CONFIRMAR o conteúdo com o Lucas antes de apresentar. -->
+      <section class="slide slide-card"
+               data-file="plataforma-vpn.md"
+               data-icon="🔒"
+               data-section="LUCAS"
+               data-presenter="Lucas">
+        <div class="card-meta">
+          <span class="card-id">infra / plataforma</span>
+          <span class="card-tag ct-sec">Infraestrutura</span>
+        </div>
+        <h2 class="card-slide-title">Wizard de Aplicações, VPN &amp; Plataforma</h2>
+        <div class="card-body triple">
+          <div class="card-section solution">
+            <div class="section-label">🧰 wizard de aplicações</div>
+            <ul>
+              <li>Provisionamento padronizado de novas aplicações no novo ambiente de produção</li>
+              <li>Pendência herdada da edição #07 — estava em finalização no fechamento do sprint anterior</li>
+            </ul>
+          </div>
+          <div class="card-section impact">
+            <div class="section-label">🔐 VPN &amp; cluster</div>
+            <ul>
+              <li><strong>VPN one-client</strong> — suporte e configuração para o time</li>
+              <li>Conexão do <strong>cluster de dev</strong> — apoio ao Gustavo no deploy do Agrotrace-dev</li>
+              <li>Processos de pontuação no <strong>Azure DevOps</strong></li>
+            </ul>
+          </div>
+          <div class="card-section note">
+            <div class="section-label">🗺 roadmap &amp; alinhamentos</div>
+            <ul>
+              <li>Validação do <strong>roadmap DevOps</strong> com o Iohan (04/09)</li>
+              <li>Alinhamento das demandas DevOps (03/09) e 1:1 de acompanhamento (24/08)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════════
+           WRAP-UP
+      ════════════════════════════════════════════════════ -->
+
+      <!-- ── 14 · Exit ─────────────────────────────────── -->
+      <section class="slide slide-cover"
+               data-file="exit.ts"
+               data-icon="🚪"
+               data-section="WRAP-UP"
+               data-presenter="">
+        <div class="cover-left">
+          <div class="cover-edition">// FIM · EDITION #08</div>
+          <h1 class="cover-title">
+            Obrigado!<br>
+          </h1>
+          <div class="cover-meta">Próxima edição: 02/10/2026</div>
+        </div>
+        <div class="cover-right">
+          <div class="code-panel">
+            <div class="code-panel-header">
+              <span>🚪</span>
+              <span>exit.ts</span>
+            </div>
+            <div class="code-panel-body">
+<span class="c-kw">process</span>.<span class="c-prop">on</span>(<span class="c-str">"spotlight:end"</span>, () <span class="c-kw">=></span> <span class="c-brace">{</span>
+  <span class="c-prop">console</span>.<span class="c-cls">log</span>(<span class="c-str">"Thanks for watching!"</span>)
+  <span class="c-prop">questions</span>.<span class="c-cls">open</span>()
+  <span class="c-prop">nextEdition</span>.<span class="c-cls">schedule</span>(<span class="c-str">"02/10/2026"</span>)
+  <span class="c-kw">process</span>.<span class="c-cls">exit</span>(<span class="c-num">0</span>)
+<span class="c-brace">}</span>)
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div><!-- /slides-container -->
+  </div><!-- /main -->
+
+  <!-- ─── Nav Bar ──────────────────────────────────────── -->
+  <div class="navbar">
+    <button class="nav-btn" id="nav-prev">← prev</button>
+    <div class="nav-dots" id="nav-dots"></div>
+    <span class="nav-counter" id="nav-counter">1 / 14</span>
+    <button class="nav-btn" id="nav-next">next →</button>
+    <span style="font-size:.7rem;color:#45475a;margin-left:1rem">
+      Use <kbd style="font-family:monospace;background:#1a2d45;border:1px solid #3d5060;border-radius:3px;padding:1px 5px;font-size:.65rem">←</kbd>
+      <kbd style="font-family:monospace;background:#1a2d45;border:1px solid #3d5060;border-radius:3px;padding:1px 5px;font-size:.65rem">→</kbd>
+      para navegar ·
+      <kbd style="font-family:monospace;background:#1a2d45;border:1px solid #3d5060;border-radius:3px;padding:1px 5px;font-size:.65rem">F</kbd> tela cheia ·
+      <kbd style="font-family:monospace;background:#1a2d45;border:1px solid #3d5060;border-radius:3px;padding:1px 5px;font-size:.65rem">T</kbd> cronômetro
+    </span>
+  </div>
+
+  <!-- ─── Status Bar ───────────────────────────────────── -->
+  <div class="statusbar">
+    <div class="statusbar-left">
+      <span class="status-item">● main</span>
+      <span class="status-item" id="status-file"></span>
+    </div>
+    <div class="statusbar-right">
+      <span class="status-item">DevOps Spotlight — DevOps Team</span>
+      <span class="status-item">11/09/2026</span>
+      <span class="status-item" id="status-presenter"></span>
+    </div>
+  </div>
+
+</div><!-- /vscode -->
+
+<script src="../spotlight.js"></script>
+<script src="../matrix.js"></script>
+</body>
+</html>

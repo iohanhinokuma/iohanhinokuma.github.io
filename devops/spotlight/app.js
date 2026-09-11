@@ -135,15 +135,30 @@ const EDITIONS = [
   },
   {
     number: 8,
-    title: "A definir",
+    title: "Solo, Safra 26/27 & Relatórios",
     date: "2026-09-11",
     period: { start: "2026-08-21", end: "2026-09-10" },
+    presentationUrl: "edition-08/spotlight.html",
+    cards: [
+      { title: "Validações do sprint", description: "Módulo Solo & Nutrição com importação de laudos, semáforo e recomendações de calagem/adubação (#13275), filtro por Certificadora (#13305), pergunta Talhão (#13256), controle de peso em lote (#13217) e fixes de blocos repetíveis e rotas inexistentes (#13264, #13266).", tag: "CI/CD" },
+      { title: "Novos produtos, builds & ambientes", description: "Check-Talent (build, variáveis e pipeline) e Check-Tenders (build e migração de usuários para o novo banco), investigação dos erros de deploy do EditalFit, ajustes de memória no cluster de dev e fechamento da Sprint Mobile 108 → 110.", tag: "Infraestrutura" },
+      { title: "Reuniões, atendimentos & alinhamentos", description: "Apresentação do sistema para a ICA (Priscila), reuniões Biodiesel MS/GO, alinhamento de demandas JBS e feats de Solo e Nutrição com Ronaldo, roadmap DevOps com Lucas e atendimentos Agroplus, Minerva e Citros.", tag: "Geral" },
+      { title: "Relatórios, procedures & Jasper", description: "Relatório de Diagnóstico de Boas Práticas concluído (#12830) e publicado no Jasper (#13215), proteção contra divisão por zero na procedure getRankingPorImportancia (#13384), relatório Paisagens Sustentáveis (#13351, #13387) e ajustes nos DG 3S, Agroplus e Aprosoja.", tag: "Monitoramento" },
+      { title: "Projetos, ambientes & publicações", description: "Projeto Deodápolis MS 2026 com form dinâmico (#13282), novo ambiente Pecuária e Genética (#13349), preparativos do módulo PEC para a Cargill Pro Leite (#13296), nova API em Python de imagens de satélite (#13206) e correção do deploy do Agrotrace (#13225).", tag: "Deploy" },
+      { title: "Treinamentos, suporte & canais", description: "Treinamentos Biodiesel Soja/BrasilBio (#13261, #13279) e de relatórios (#13237), novos chips de suporte e troca do número no Agrotrace/CheckMilk (#13208, #13210), configuração de impressoras e celulares e acompanhamento de envio de dados.", tag: "Segurança" },
+      { title: "Biodiesel — Safra 26/27 & Recibo", description: "Virada de safra 25 → 26 concluída no Biodiesel Soja (croqui #13178 e perfil #13180), ajuste do croqui do Cacau (#13200), importação de grupos (#13319), conteúdo do Recibo desenvolvido (#12911) e Releases 108 (#13221) e 109 (#13364).", tag: "CI/CD" },
+      { title: "16 PRs mergeados & QA mobile", description: "Anexos e assinatura (11864, 11853, 11838), recibo e relatórios PDF (11757, 11832), coordenadas e GPS (11814, 11745), cadastro de Lote e Animal (11795, 11869), módulo PEC (11836) e formulários (11734, 11717, 11686, 11665, 11751) + 7 Test Cases.", tag: "Deploy" },
+      { title: "Suporte, notebooks & atendimentos", description: "Configuração de notebooks (#13386, #13383, #13339), acessos e logins (#13363, #13367, #13385, #13267), investigação de atendimentos sem respostas (#13196), coordenadas sumindo (#13239, #13156) e app fechando no croqui (#13160).", tag: "Segurança" },
+      { title: "Wizard de aplicações, VPN & plataforma", description: "Wizard de provisionamento padronizado de novas aplicações no novo ambiente de produção (pendência herdada da #07), suporte à VPN one-client, conexão do cluster de dev, processos de pontuação no Azure DevOps e validação do roadmap DevOps.", tag: "Infraestrutura" },
+    ],
+  },
+  {
+    number: 9,
+    title: "A definir",
+    date: "2026-10-02",
+    period: { start: "2026-09-11", end: "2026-10-01" },
     presentationUrl: null, // "Em breve" — apresentação ainda não publicada
     // sem cards → botões desabilitados e status "planejada"
-    // Pendente desta edição:
-    //   Lucas — Wizard de aplicações (provisionamento padronizado de novas
-    //   aplicações no novo ambiente de produção) — estava em finalização no
-    //   fechamento da #07.
   },
 ];
 
