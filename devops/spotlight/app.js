@@ -154,9 +154,28 @@ const EDITIONS = [
   },
   {
     number: 9,
-    title: "A definir",
+    title: "Citros, Biodiesel & Assinatura Digital",
     date: "2026-10-02",
     period: { start: "2026-09-11", end: "2026-10-01" },
+    presentationUrl: "edition-09/spotlight.html",
+    cards: [
+      { title: "20 validações do sprint", description: "Score oficial e filtros do Dashboard Citros (#13430), painéis Abates e JBS (#13460), dashboard SICAR com aba CAF (#13507, #13540), vínculo automático produtor-técnico (#13484), unicidade de protocolo (#13601) e limite de requisições por usuário (#13606).", tag: "CI/CD" },
+      { title: "VPN, ambientes & segurança", description: "Validação dos usuários da VPN e VPN do servidor de Marília, ajustes no deploy do Agrotrace LP, variáveis de ambiente com Ops Tools + Infisical, revisão de segurança nos repositórios de infra e conformidade com a ISO/IEC 27001.", tag: "Infraestrutura" },
+      { title: "Reuniões, atendimentos & alinhamentos", description: "Melhorias Citros com Cláudio e Luciano, feats e indicadores JBS, apresentação Digi Agro para o Sicredi, reuniões Biodiesel GO, novo protocolo Agroplus com Douglas e atendimentos 3S, Emater MG e Biodiesel.", tag: "Geral" },
+      { title: "Relatórios, protocolo & indicadores", description: "Relatório DG Biodiesel-Soja (#13287), plano de ação de boas práticas (#13375), ranking 3S (#13541), extrato Aprosoja (#13510, #13511), relatório de protocolo (#13497, #13498), dashboard de esforços gerais (#13195) e indicadores de projetos (#13488).", tag: "Monitoramento" },
+      { title: "Paisagens Sustentáveis & form dinâmico", description: "Paisagens Sustentáveis publicado no novo cluster e em prod (#13402, #13436), form dinâmico da Fundação BB (#13569), função de não editar no mobile (#13609), demandas Pectrace (#13437) e aumento do limite de anexos (#13495).", tag: "Deploy" },
+      { title: "Treinamentos, suporte & dispositivos", description: "Treinamentos Biodiesel, Aprosoja, Agrotrace e Cacau-Biodiesel (#13422, #13423, #13486), nova impressora portátil (#13459), celulares e impressoras novas (#13610), permissões e resgate de usuários e apoio na abertura e conclusão de atendimentos.", tag: "Segurança" },
+      { title: "Biodiesel, protocolo PCV & assinatura", description: "Protocolo PCV do Cacau Biodiesel (#13487, Ticket 312), assinatura digital no recibo (#13469), consolidação da safra 25/26 → 26/27 (#13532), laudos 1 e 2 em andamento (Ticket 314) e Release 110 aguardando aprovação (#13512).", tag: "CI/CD" },
+      { title: "15 PRs mergeados & QA mobile", description: "Módulo Solo & Nutrição (11960), assinatura digital segregada por documento (12016), SDK Android 36 (11886), PEC e CAF (12004, 12056, 12064), RAT e protocolo (12027, 12054, 11888) e desempenho do form dinâmico (11899), mais 5 Test Cases.", tag: "Deploy" },
+      { title: "Suporte, cadastros & envio de dados", description: "Itens pendentes de envio e erros de anexos (#13426, #13588), vínculos de produtores e projetos (#13439, #13526, #13550), criação de logins, desativação de duplicados e suporte a impressoras, notebooks, CheckWork e CheckMilk.", tag: "Segurança" },
+      { title: "Ops Tools, Infisical & painel de status", description: "Estruturação do ambiente Ops Tools e do painel de status das aplicações, variáveis de ambiente via Infisical e continuidade da migração para o novo cluster com o Paisagens Sustentáveis em prod.", tag: "Infraestrutura" },
+    ],
+  },
+  {
+    number: 10,
+    title: "A definir",
+    date: "2026-10-23",
+    period: { start: "2026-10-02", end: "2026-10-22" },
     presentationUrl: null, // "Em breve" — apresentação ainda não publicada
     // sem cards → botões desabilitados e status "planejada"
   },
