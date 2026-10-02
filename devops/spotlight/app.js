@@ -169,6 +169,7 @@ const EDITIONS = [
       { title: "15 PRs mergeados & QA mobile", description: "Módulo Solo & Nutrição (11960), assinatura digital segregada por documento (12016), SDK Android 36 (11886), PEC e CAF (12004, 12056, 12064), RAT e protocolo (12027, 12054, 11888) e desempenho do form dinâmico (11899), mais 5 Test Cases.", tag: "Deploy" },
       { title: "Suporte, cadastros & envio de dados", description: "Itens pendentes de envio e erros de anexos (#13426, #13588), vínculos de produtores e projetos (#13439, #13526, #13550), criação de logins, desativação de duplicados e suporte a impressoras, notebooks, CheckWork e CheckMilk.", tag: "Segurança" },
       { title: "Ops Tools, Infisical & painel de status", description: "Estruturação do ambiente Ops Tools e do painel de status das aplicações, variáveis de ambiente via Infisical e continuidade da migração para o novo cluster com o Paisagens Sustentáveis em prod.", tag: "Infraestrutura" },
+      { title: "Roadmap — metas da próxima sprint", description: "Avançar nas normalizações para certificações como a ISO/IEC 27001, aprimorar o uso de variáveis via Infisical em projetos novos, apresentar as melhorias à equipe do Citros e validar o novo protocolo Agroplus (possivelmente multi-protocolo).", tag: "Geral" },
     ],
   },
   {
